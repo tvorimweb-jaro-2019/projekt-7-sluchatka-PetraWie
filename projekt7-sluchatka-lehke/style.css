@@ -43,3 +43,353 @@ a:focus,
 a:active {
 	color: #2b80b9;
 }
+/* ----------------------------------- */
+
+
+.uvod {
+	display: flex; 
+	background-color: #f5f5f5;
+	width: 426px;
+	max-width: 768px;
+	position: relative; 
+	height: 100%;
+}
+
+.hlavicka-vlevo {
+	flex-direction: row;
+	margin-top: 30px;
+	margin-left: 30px;
+	max-width: 100px;
+	max-height: 50px;
+}
+
+.hlavicka-vpravo {
+	flex-direction: row;
+	/* width: 50%; */
+} 
+
+.menu {
+	color: grey;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    /* display: column;
+    flex-wrap: nowrap; */
+	margin: 10px; 
+	/* width: 50%; */
+}
+
+.menu li {  
+    list-style-type: none;
+    border-bottom: solid 1px lightgray;
+    width: 100%;
+	padding: 10px;
+	
+}
+
+.menu a {
+    text-decoration: none;
+    /* width: 100%; */
+    display: block;
+}
+
+.menu-tlacitka {
+	display: flex;
+	/* margin: 30px; */
+	width: 100%;
+	text-align: center;
+	/* justify-content: flex-start; */
+}
+
+.tlacitko-primarni {
+	flex-direction: row;
+	padding: 15px; 
+	background-color: #3498db;
+	color: white;
+	border-radius: 8px;
+	width: 50%;
+	justify-content: space-evenly;
+	margin: 15px;
+}
+
+.tlacitko-sekundarni {
+	/* margin-left: 20px; */
+	flex-direction: row;
+	padding: 15px; 
+	background-color: #3498db;
+	color: white; 
+	border-radius: 8px;
+	width: 50%;
+	justify-content: space-between;
+	margin: 15px;
+}
+
+h1 {
+	font-size: 44px;
+	font-weight: 300;
+	line-height: 1.2;
+	padding-left: 30px;
+}
+
+img {
+	max-width: 425px;
+}
+.banner-text {
+	font-size: 44px;
+	font-weight: 300;
+	line-height: 1.2;
+	max-width: 425px;
+}
+.banner-text .upoutavka {
+	font-size: 18px;
+	color: #a5a5a5;
+	margin: 50px;
+	margin-left: 30px;
+	max-width: 425px;
+}
+
+.tlacitko-velke {
+	margin: 30px;
+	font-size: 18px;
+	padding: 15px; 
+	background-color: #3498db;
+	color: white; 
+	border-radius: 8px;
+}
+
+.minitext {
+	margin: 15px;
+	margin-left: 30px;
+	font-size: 9px;
+}
+
+.banner-foto {
+	display: flex;
+    flex-direction: column;
+    /* background-image: src(images/ruzova-slecna.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    height: 100%;
+    max-width: 100%;
+}
+/* ------------- */
+.sekce-bila {
+	display: flex;
+	height: 100%;
+	max-width: 425px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.vlastnosti {
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+.ikona-kufrik {
+	/* width: 50%; */
+	border: solid 2px lightgray;
+	padding: 15px;
+	/* margin: 15px; */
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.ikona-slunce {
+	/* width: 50%; */
+	border: solid 2px lightgray;
+	padding: 15px;
+	/* margin: 15px; */
+	margin-bottom: 10px;
+	width: 100%;
+	
+}
+
+.ikona-srdce {
+	/* width: 50%; */
+	border: solid 2px lightgray;
+	padding: 15px;
+	/* margin: 15px; */
+	margin-bottom: 10px;
+	width: 100%;
+	
+}
+
+.ikona-zvuk {
+	/* width: 50%; */
+	border: solid 2px lightgray;
+	padding: 15px;
+	/* margin: 15px; */
+	margin-bottom: 10px;
+	width: 100%;
+	
+}
+/* --------- */
+.paticka {
+	background-color: black;
+	color: white;
+	width: 425px;
+	max-width: 767px;
+	padding: 5px;
+}
+
+.copyright {
+	text-align: center;
+	padding: 5px;
+}
+.paticka-menu {
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px;
+}
+/* ------------------------ TABLET ----------------- */
+
+@media (min-width: 767px) {
+.uvod {
+	display: flex;
+	width: 767px;
+	max-width: 1139px;
+}
+.hlavicka-vlevo {
+	flex-direction: row;
+	margin-top: 30px;
+	margin-left: 30px;
+	max-width: 100px;
+	max-height: 50px;
+}
+.menu {
+	display: flex;
+	width: 100%;
+	width: 750px;
+}
+.menu li {  
+	flex-direction: row;
+	width: 20%; 
+	border: solid 1px lightgray;
+    width: 100%;
+	padding: 10px;
+	justify-content: space-between;
+}
+
+.menu a {
+    text-decoration: none;
+    /* width: 100%; */
+    display: inline block;
+}
+
+.menu-tlacitka {
+	display: flex;
+	justify-content: space-around;
+	/* margin: 30px; */
+	width: 95%;
+	text-align: center;
+	/* justify-content: flex-start; */
+}
+.banner {
+	display: flex; 
+	width: 100%;
+	align-items: flex-end;
+}
+.banner-foto img {
+	width: 50%;
+	flex-direction: row; 
+	width: 767px;
+	height: 100%;	
+	align-items: flex-end;	
+	margin-left: -90px;
+}
+.banner-text h1 {
+	width: 100%;
+	flex-direction: row; 
+	font-size: 70px;
+	font-weight: 300;
+	line-height: 1.2;
+	width: 767px;
+}
+.upoutavka {
+	display: flex;
+	/* font-size: 18px;
+	color: #a5a5a5;
+	margin: 50px;
+	margin-left: 30px;
+	max-width: 700 px; */
+} 
+/* .upoutavka .p {
+	flex-direction: column;
+	width: 70%;
+}
+.upoutavka .tlacitko-velke {
+	flex-direction: column;
+	width: 30%; */
+
+.sekce-bila {
+	/* display: flex;
+	height: 100%; */
+	max-width: 760px;
+}
+.vlastnosti {
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+/* 
+.ikona-kufrik {
+	/* width: 50%; *
+	border: solid 2px lightgray;
+	padding: 15px;
+	/* margin: 15px; *
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.ikona-slunce {
+	/* width: 50%; *
+	border: solid 2px lightgray;
+	padding: 15px;
+	/* margin: 15px; *
+	margin-bottom: 10px;
+	width: 100%;
+	
+}
+
+.ikona-srdce {
+	/* width: 50%; *
+	border: solid 2px lightgray;
+	padding: 15px;
+	/* margin: 15px; *
+	margin-bottom: 10px;
+	width: 100%;
+	
+}
+
+.ikona-zvuk {
+	/* width: 50%; *
+	border: solid 2px lightgray;
+	padding: 15px;
+	/* margin: 15px; *
+	margin-bottom: 10px;
+	width: 100%;
+	
+} */
+
+.paticka {
+	background-color: black;
+	color: white;
+	width: 767px;
+	/* max-width: 767px; */
+	padding: 5px;
+}
+
+/* ------------------------ LAPTOP --------------------- */
+
+@media (min-width: 1140px) {
+
+
+}
